@@ -22,10 +22,20 @@ def home(request):
         messages.add_message(request, messages.SUCCESS, 'test added')
     return render(request, 'covid/index.html')
 
+# autmate the form submission by submitting an excel file
 def automateForm(request):
     if request.method == "POST":
         file_name = request.FILES['file_name']
+        
+        # print(ext)
         res = formSubmit(file_name)    
         return render(request, 'covid/automatform.html', {'res':res})
         
     return render(request, 'covid/automatform.html')
+
+
+
+def testRecords(request):
+    obj = TestResult.objects.all()
+    
+    return render(request, 'covid/tests_record.html', {'t_records':obj})

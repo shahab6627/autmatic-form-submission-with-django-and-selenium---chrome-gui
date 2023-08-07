@@ -1,0 +1,47 @@
+{% extends 'covid/base.html' %}
+
+
+{% block title %}
+    <title> patients test record</title>
+{% endblock title %}
+
+
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            {% if t_records %}
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">Patent Name</th>
+                    <th scope="col">Test Result</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col">Other Symptoms</th>
+                    <th scope="col">Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    {% for test in t_records %}
+                  <tr>
+                    <th scope="row">{{test.id}}</th>
+                    <td>{{test.patient_name}}</td>
+                    <td>{{test.p_test_result}}</td>
+                    <td>{{test.gender}}</td> 
+                    <td>{{test.other_symptoms}}</td> 
+                    <td>{{test.created}}</td> 
+
+                    
+
+                  </tr>
+                   {%endfor%}
+                </tbody>
+              </table>
+              {% else %}
+              <h4>No Test Records Found</h4>
+              {% endif %}
+        </div>
+    </div>
+{% endblock content %}
+    

@@ -3,5 +3,6 @@ from .views import *
 
 urlpatterns = [
     path('', home, name="home"),
-    path('upload-csv', automateForm, name="autoform-submit")
+    path('automatic-form', automateForm, name="autoform-submit"),
+    path('all-test', testRecords, name="test-records")
 ]
