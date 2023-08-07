@@ -1,4 +1,4 @@
-# Python Automation With Django Form and selenium
+# Python Automation With Django and Selenium
 
 # why to use python automation
 on our daily life we want to submit lots of data to our website, send emails to lots of users etc, and this is very time consuming and effort full task for us. python automation is the best solution to automat our tasks to reduce our efforts and working time. Selenium is one of python package used fo python automation. 
