@@ -3,7 +3,7 @@
 # why to use python automation
 on our daily life we want to submit lots of data to our website, send emails to lots of users etc, and this is very time consuming and effort full task for us. python automation is the best solution to automat our tasks to reduce our efforts and working time. Selenium is one of python package used fo python automation. 
 
-in this project i use the quality of selenium to automat my form submission by uploading just an Excel File to the server.
+in this project i use the quality of selenium to automat my form submission by uploading just an Excel File to the server.........
 
 # How this application works
 
