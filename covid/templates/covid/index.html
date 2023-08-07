@@ -1,0 +1,74 @@
+{% extends 'covid/base.html' %}
+
+
+{% block title %}
+   <title>home</title>
+{% endblock title %}
+
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <h2>Covid-19 patients data submission form</h2>
+            {%if messages %}
+                
+                {% for message in messages %}
+                    <div class="alert alert-success">
+                        {{message}}
+                    </div>
+                {% endfor %}
+                    
+            {%endif %}
+            <form action="" method="post">
+                {% csrf_token %}
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Patient name</label>
+                <input type="text" class="form-control" name="patient_name" placeholder="Enter Name">
+              </div>
+             <span>Test Result</span>
+              <select class="form-select" aria-label="Default select example" name="test_result" >
+                <option selected>-- select --</option>
+                <option value="positive">Positive</option>
+                <option value="negative">Negative</option>
+             
+              </select>
+              <br>
+              <div><span>Gender</span></div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                <label class="form-check-label" for="inlineRadio1">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                <label class="form-check-label" for="inlineRadio2">Female</label>
+              </div>
+             <br><br>
+             <div><span>Other Symptoms</span></div>
+             
+              <div class="form-check form-check-inline other-symptoms">
+                <input class="form-check-input" name="symptoms" type="checkbox" id="sugar" value="sugar">
+                <label class="form-check-label" for="inlineCheckbox1">Sugar</label> 
+              </div>
+
+            
+
+              <div class="form-check form-check-inline other-symptoms">
+                <input class="form-check-input" name="symptoms" type="checkbox" id="blood_pressure" value="blood pressure">
+                <label class="form-check-label" for="inlineCheckbox1">Blood Pressure</label> 
+              </div>
+            
+              <div class="form-check form-check-inline other-symptoms">
+                <input class="form-check-input" name="symptoms" type="checkbox" id="fever" value="fever">
+                <label class="form-check-label" for="inlineCheckbox1">Fever</label> 
+              </div>
+              <br><br>
+              <div>
+              <button type="submit" class="btn btn-sm btn-primary btn-submit"> Submit</button>
+
+              </div>
+            </form>
+        </div>
+    </div>
+{% endblock content %}
+    
+    

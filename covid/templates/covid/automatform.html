@@ -1,0 +1,29 @@
+{% extends 'covid/base.html' %}
+
+
+{% block title %}
+
+    
+{% endblock title %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <h4>Automatic Form submission</h4>
+            <form action="" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">select patient csv file</label>
+                    <input class="form-control" type="file" name="file_name" id="formFile" required>
+                  </div>
+                
+                  <div><button class="btn btn-sm btn-primary">Submit</button></div>
+                
+            </form>
+            {% if res %}
+            <div class="alert alert-succsee mt-3">{{res}}</div>
+            {%endif%}
+        </div>
+    </div>
+{% endblock %}    
