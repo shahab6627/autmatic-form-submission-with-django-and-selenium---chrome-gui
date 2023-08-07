@@ -15,10 +15,12 @@ The use of this application is very simple. In this application we submit our fo
 # automatic form submission
 ![Screenshot](media/autoform.png)
 
-# all submitted tests 
+Note!... In the Root Directory of this project a pre formatted Excel File is given for this project. Don't Use other formate otherwise form will not be submitting.
+
+# All submitted tests 
 ![Screenshot](media/tests.png)
 
-# requirement
+# Requirement
 1: python version >= 3.0
 
 2: django version >= 4.0
