@@ -9,4 +9,4 @@ in this project i use the quality of selenium to automat my form submission by u
 
 The use of this application is very simple. In this application we submit our forms manually as will is by using automatic form submission. in manual form submission we fill form for each record and then submit one by one. but in automatic form submission we just select our Excel file that contains our records and click on submit button. after submitting the file python will take control of all data one by one without any other interference of user.
 
-![Screenshot](screenshot.png)
+![Screenshot](media/1.png)
