@@ -1,7 +1,7 @@
 # Python Automation With Django Form and selenium
 
 # why to use python automation
-on our daily life we want to submit lots of data to our website by using forms, and this is very time consuming and effort full task for us. python automation is the best solution to automat our form submission to reduce our efforts and working time. Selenium is one of python package used fo python automation. 
+on our daily life we want to submit lots of data to our website, send emails to lots of users etc, and this is very time consuming and effort full task for us. python automation is the best solution to automat our tasks to reduce our efforts and working time. Selenium is one of python package used fo python automation. 
 
 in this project i use the quality of selenium to automat my form submission by uploading just an Excel File to the server.
 
@@ -18,4 +18,25 @@ The use of this application is very simple. In this application we submit our fo
 # all submitted tests 
 ![Screenshot](media/tests.png)
 
- 
+# requirement
+1: python version >= 3.0
+
+2: django version >= 4.0
+
+# how to run this project  
+
+step 1: download the project
+
+step 2: create a virtual environment with "virtualenv myenv" command ------> this is for ubuntu
+
+step 3: activate your virtual env by " source myenv/bin/activate " --------> this command is for ubuntu users
+
+step 4: change directory to the project folder
+
+step 5: pip install -r requirements.txt
+
+step 6: python manage.py makemigrations
+
+step 7: python manage.py migrate
+
+step 8: python manage.py runserver
